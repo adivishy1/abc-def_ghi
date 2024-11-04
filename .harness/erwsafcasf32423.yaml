@@ -1,0 +1,25 @@
+pipeline:
+  name: erwsafcasf32423
+  identifier: erwsafcasf32423
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: sdf
+        identifier: sdf
+        tags: {}
+        template:
+          templateRef: stage_cfd_template_test
+          versionLabel: vdf
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: fdg
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>

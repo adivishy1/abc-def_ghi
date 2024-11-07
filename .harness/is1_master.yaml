@@ -1,0 +1,21 @@
+inputSet:
+  name: is1 master
+  identifier: is1_master
+  orgIdentifier: default
+  projectIdentifier: GitX_Remote
+  pipeline:
+    identifier: test_remote_pipeline_input_set
+    stages:
+      - stage:
+          identifier: df
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: df
+                    type: HarnessApproval
+                    spec:
+                      approvers:
+                        userGroups:
+                          - account._account_all_users

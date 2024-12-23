@@ -1,0 +1,21 @@
+inputSet:
+  name: inputset 123123
+  identifier: inputset_123123
+  orgIdentifier: default
+  projectIdentifier: GitX_Remote
+  pipeline:
+    identifier: test_remote_pipeline_input_set2
+    stages:
+      - stage:
+          identifier: df
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: df
+                    type: HarnessApproval
+                    spec:
+                      approvers:
+                        userGroups:
+                          - account._account_all_users

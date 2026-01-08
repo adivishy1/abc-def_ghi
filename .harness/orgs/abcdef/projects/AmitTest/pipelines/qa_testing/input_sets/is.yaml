@@ -1,0 +1,21 @@
+inputSet:
+  name: is
+  identifier: is
+  orgIdentifier: abcdef
+  projectIdentifier: AmitTest
+  pipeline:
+    identifier: qa_testing
+    stages:
+      - stage:
+          identifier: sa
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: asd
+                    type: HarnessApproval
+                    spec:
+                      approvers:
+                        userGroups:
+                          - account._account_all_users

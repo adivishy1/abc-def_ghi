@@ -1,0 +1,21 @@
+inputSet:
+  name: is4
+  identifier: is4
+  orgIdentifier: default
+  projectIdentifier: AmitTest
+  pipeline:
+    identifier: qa_testing
+    stages:
+      - stage:
+          identifier: sdf
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: adfs
+                    type: HarnessApproval
+                    spec:
+                      approvers:
+                        userGroups:
+                          - account._account_all_users

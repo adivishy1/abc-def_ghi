@@ -1,0 +1,12 @@
+template:
+  name: rishi_1
+  identifier: rishi_1
+  versionLabel: "1"
+  type: Step
+  projectIdentifier: RishiTest
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Wait
+    spec:
+      duration: 10m

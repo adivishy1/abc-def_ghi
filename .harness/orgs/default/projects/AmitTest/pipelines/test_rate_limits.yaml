@@ -1,0 +1,32 @@
+pipeline:
+  name: test rate limits
+  identifier: test_rate_limits
+  tags: {}
+  projectIdentifier: AmitTest
+  orgIdentifier: default
+  stages:
+    - stage:
+        name: sda
+        identifier: sda
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: dsc
+                  identifier: dsc
+                  type: HarnessApproval
+                  timeout: 1d
+                  spec:
+                    approvalMessage: |-
+                      Please review the following information
+                      and approve the pipeline progression
+                    includePipelineExecutionHistory: true
+                    approvers:
+                      minimumCount: 1
+                      disallowPipelineExecutor: false
+                      userGroups: <+input>
+                    isAutoRejectEnabled: false
+                    approverInputs: []
+        tags: {}
